@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<runway name="Example Runway" icao="EGAA">
+    <mainDesignator>09</mainDesignator>
+    <side>L</side>
+    <takeOffLanding>TakeOff</takeOffLanding>
+    <TORA>700</TORA>
+    <TODA>600</TODA>
+    <ASDA>500</ASDA>
+    <threshold>400</threshold>
+    <LDA>300</LDA>
+    <RESA>200</RESA>
+    <blastAllowance>100</blastAllowance>
+</runway>

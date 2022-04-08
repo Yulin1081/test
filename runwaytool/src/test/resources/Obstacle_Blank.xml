@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<obstacle>
+    <name>Blank Obstacle</name>
+    <distanceX>0.0</distanceX>
+    <distanceY>0.0</distanceY>
+    <length>0.0</length>
+    <width>0.0</width>
+    <frontHeight>0.0</frontHeight>
+    <backHeight></backHeight>
+</obstacle>

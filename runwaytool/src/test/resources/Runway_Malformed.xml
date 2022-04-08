@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<runway name="" icao="EGZZ">
+    <mainDesignator>12</mainDesignator>
+    <side>R</side>
+    <takeOffLanding>TakeOff</takeOffLanding>
+    <TORA>3000</TORA>
+    <LALAL>3000</LALAL>
+    <ASDA>3000</ASDA>
+    <threshold>3000</threshold>
+    <REddSA>300</REdddSA>
+    <blastAllowance>300</blastAllowance>
+</runway>

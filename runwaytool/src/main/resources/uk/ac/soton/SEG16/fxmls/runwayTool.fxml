@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="gridPane" StyleClass="background-color-1"  xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.soton.SEG16.RunwayToolController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.903564453125" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="643.0" minWidth="10.0" prefWidth="258.0939025878906" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.2688903808594" minWidth="0.0" prefWidth="9.098968505859375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="577.5" minWidth="10.0" prefWidth="193.40103149414062" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="590.614013671875" minWidth="0.0" prefWidth="7.601531982421875" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="818.2969665527344" minWidth="10.0" prefWidth="801.8984680175781" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.2030029296875" minWidth="9.5380859375" prefWidth="9.5380859375" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="732.0" minHeight="4.502540588378906" prefHeight="5.802032470703125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="732.0" minHeight="10.0" prefHeight="718.6979675292969" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="474.83241271972656" minHeight="0.0" prefHeight="12.538230895996094" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

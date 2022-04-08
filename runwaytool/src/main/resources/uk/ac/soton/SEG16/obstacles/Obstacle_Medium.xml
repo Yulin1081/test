@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<obstacle>
+    <distanceX>375.0</distanceX>
+    <distanceY>620.0</distanceY>
+    <length>250.0</length>
+    <width>200.0</width>
+    <frontHeight>180.0</frontHeight>
+    <backHeight>120.0</backHeight>
+</obstacle>

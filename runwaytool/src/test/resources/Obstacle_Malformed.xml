@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<obstacle>
+    <name>Malformed Obstacle</name>
+    <distanceX>23</distanceX>
+    <distanceY>234</distanceY>
+    <lengsadfth>234</lengsadfth>
+    <frontHeight>123</frontHeight>
+    <backHeight>123</backHeight>
+</obstacle>

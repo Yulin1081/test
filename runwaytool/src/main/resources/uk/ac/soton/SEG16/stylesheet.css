@@ -1,0 +1,31 @@
+.header {
+    /* */
+}
+
+.background-color-1{}
+.background-color-2{
+    -fx-background-color: SLATEGREY;
+}
+.background-color-3{
+    -fx-background-color: DIMGREY;
+}
+.background-color-4{
+    -fx-background-color: DARKSLATEGREY;
+}
+.background-color-5{
+    -fx-background-color: SLATEGRAY;
+}
+.background-color-6{
+    -fx-background-color: LIGHTSLATEGREY;
+}
+
+.text-color-1{
+    -fx-color:#fff;
+    -fx-border-color: #fff;
+}
+
+.text-fill-1{
+    -fx-text-fill: #fff; 
+}
+
+

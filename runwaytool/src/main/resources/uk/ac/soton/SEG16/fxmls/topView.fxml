@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.soton.SEG16.runway.TopViewController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="255.5" minHeight="10.0" prefHeight="136.34518432617188" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="304.1548156738281" minHeight="10.0" prefHeight="304.1548156738281" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="440.0" style="-fx-background-color: PAPAYAWHIP;" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="62.0" minHeight="3.0" prefHeight="37.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox fx:id="ldaResaSixtyM" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Line fx:id="ldaline1" endX="100.0" stroke="#3c00ff" strokeWidth="3.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Line>
+                        <Line fx:id="sixtyM" endX="20.0" stroke="#ff9500" strokeWidth="3.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Line>
+                        <Line fx:id="resaline" endX="40.0" stroke="#ff04cd" strokeWidth="3.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="20.0" />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox fx:id="hboxLdaSixtyResalbls" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="ldalabel1" text="LDA (m)" />
+                        <Label fx:id="sixtyMlabel" text="(60m)" />
+                        <Label fx:id="resalabel1" text="RESA (m)" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Line fx:id="toraline" endX="100.0" stroke="RED" strokeWidth="3.0">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Line>
+                  <Label fx:id="toralabel" prefHeight="17.0" prefWidth="79.0" text="TORA (m)" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Line fx:id="asdaline" endX="100.0" stroke="#2b8000" strokeWidth="3.0">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Line>
+                  <Label fx:id="asdalabel" text="ASDA (m)" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Line fx:id="todaline" endX="100.0" stroke="#9900a1" strokeWidth="3.0">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Line>
+                  <Label fx:id="todalabel" text="TODA (m)" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane style="-fx-background-color: BURLYWOOD;" GridPane.rowIndex="5">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <Label text="Key" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                  </BorderPane>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="76.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="144.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <BorderPane prefHeight="22.0" prefWidth="78.0">
+                                 <center>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f8cff" height="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="65.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <left>
+                                    <Label prefHeight="17.0" prefWidth="106.0" text=":  Graded area" BorderPane.alignment="CENTER" />
+                                 </left>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5b942" height="15.0" stroke="BLACK" strokeType="INSIDE" width="63.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <center>
+                                    <Label prefHeight="17.0" prefWidth="125.0" text=":  Stopway" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="76.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="144.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3ca334" height="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="66.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <center>
+                                    <Label prefHeight="17.0" prefWidth="174.0" text=":  Clearway/ Cleared Area" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <Line endX="-44.70710754394531" endY="-7.571066856384277" startX="-100.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <center>
+                                    <Label prefHeight="17.0" prefWidth="109.0" text=":  TOCS/ ALS" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="77.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="363.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2d1f" height="14.0" stroke="BLACK" strokeType="INSIDE" width="68.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <left>
+                              <Label text=": Obstacle" BorderPane.alignment="CENTER" />
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="displacedThresholdLabel" text="Displaced Threshold (m)" GridPane.rowIndex="1" />
+                  <Line fx:id="displacedThresholdLine" endX="100.0" startX="-100.0" stroke="#42b0ff" strokeWidth="3.0" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane fx:id="topViewGridPane" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="201.0" prefWidth="440.0" style="-fx-background-color: gOLD;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="859.5030517578125" minWidth="10.0" prefWidth="400.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="72.46916580200195" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="97.65840148925781" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="97.65840148925781" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="91.53971099853516" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f;" GridPane.rowIndex="2">
+                           <top>
+                              <Label fx:id="directionTakeOffLanding" text="directionTakeOffLanding" BorderPane.alignment="CENTER" />
+                           </top></BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: SfALMON;" GridPane.rowIndex="1">
+                           <center>
+                              <ImageView fx:id="arrow" fitHeight="11.0" fitWidth="133.0" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../Arrow.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+               </center>
+            </BorderPane>
+            <StackPane prefHeight="87.0" prefWidth="401.0" GridPane.rowIndex="2">
+               <children>
+                  <Polygon fx:id="gradedArea" fill="#227dcd" points="" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="clearedArea" fill="#48a148" points="-50.0, 40.0, 50.0, 40.0, -3.5, 16.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="stopway" fill="#ffa91f" points="-50.0, 40.0, 4.5, -11.5, -50.0, 3.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.2819061279297" minWidth="10.0" prefWidth="19.914939880371094" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.1701202392578" minWidth="10.0" prefWidth="399.5850601196289" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.35238647460938" minWidth="10.0" prefWidth="20.050567626953125" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane fx:id="runwayHeight" style="-fx-background-color: GREY;" GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.49336242675781" minWidth="10.0" prefWidth="29.309158325195312" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.71783447265625" minWidth="10.0" prefWidth="325.71783447265625" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.28192138671875" minWidth="10.0" prefWidth="34.28216552734375" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="321.0" />
+                                    <Polygon fx:id="obstacle" fill="RED" stroke="#ff5c5c" strokeType="INSIDE">
+                                      <points>
+                                        <Double fx:value="-50.0" />
+                                        <Double fx:value="40.0" />
+                                        <Double fx:value="50.0" />
+                                        <Double fx:value="40.0" />
+                                        <Double fx:value="0.0" />
+                                        <Double fx:value="-60.0" />
+                                      </points>
+                                    </Polygon>
+                                 </children>
+                              </StackPane>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label fx:id="leftNumber" alignment="CENTER" contentDisplay="CENTER" text="leftNumber" textFill="WHITE" />
+                                    <Label fx:id="leftCharacter" alignment="CENTER" text="leftCharacter" textFill="WHITE" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label fx:id="rightNumber" alignment="CENTER" prefHeight="17.0" prefWidth="48.0" text="rightNumber" textFill="#fffafa" />
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                       <center>
+                                          <Label fx:id="rightCharacter" alignment="CENTER" text="rightCharacter" textFill="#f8f4f4" BorderPane.alignment="CENTER" />
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

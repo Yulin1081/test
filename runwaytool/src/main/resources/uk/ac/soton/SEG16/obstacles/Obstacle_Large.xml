@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<obstacle>
+    <name>Large Obstacle</name>
+    <distanceX>539.0</distanceX>
+    <distanceY>284.0</distanceY>
+    <length>495.0</length>
+    <width>595.0</width>
+    <frontHeight>25.0</frontHeight>
+    <backHeight>124.0</backHeight>
+</obstacle>

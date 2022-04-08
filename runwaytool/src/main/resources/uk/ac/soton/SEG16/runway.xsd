@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="runway">
+  <xsd:complexType>
+    <xsd:sequence>
+      <xsd:element name="mainDesignator" type="xsd:string"/>
+      <xsd:element name="side" type="xsd:string"/>
+      <xsd:element name="takeOffLanding" type="xsd:string"/>
+      <xsd:element name="TORA" type="xsd:positiveInteger"/>
+      <xsd:element name="TODA" type="xsd:positiveInteger"/>
+      <xsd:element name="ASDA" type="xsd:positiveInteger"/>
+      <xsd:element name="threshold" type="xsd:integer"/>
+      <xsd:element name="LDA" type="xsd:integer"/>
+      <xsd:element name="RESA" type="xsd:integer"/>
+      <xsd:element name="blastAllowance" type="xsd:integer"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+    <xsd:attribute name="icao" type="xsd:string"></xsd:attribute>
+  </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

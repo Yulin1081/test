@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="667.0" prefWidth="792.0" StyleClass="background-color-2" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.soton.SEG16.RunwayToolController_View">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="355.3992919921875" minWidth="4.50506591796875" prefWidth="4.50506591796875" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="797.4949340820312" minWidth="10.0" prefWidth="797.4949340820312" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="217.3992919921875" minHeight="0.0" prefHeight="18.81219482421875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="685.0" minHeight="10.0" prefHeight="685.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="43.59893798828125" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <GridPane prefHeight="640.0" prefWidth="729.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.99908447265625" minWidth="10.0" prefWidth="123.2132568359375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="674.2867431640625" minWidth="10.0" prefWidth="674.2867431640625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <center>
+                  <GridPane StyleClass="background-color-6" BorderPane.alignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.9478759765625" minWidth="10.0" prefWidth="118.02606201171875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.028076171875" minWidth="10.0" prefWidth="439.626953125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.9739990234375" minWidth="10.0" prefWidth="116.373046875" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="222.97390747070312" minHeight="10.0" prefHeight="123.671630859375" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="457.469482421875" minHeight="10.0" prefHeight="440.328369140625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="124.63043212890625" minHeight="10.0" prefHeight="120.51959228515625" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane fx:id="topView" prefHeight="200.0" prefWidth="200.0" StyleClass="background-color-2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <center>
+                              <Label prefHeight="47.0" prefWidth="285.0" text="Enter data and calculate to see views of runway here" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                     </children>
+                  </GridPane>
+               </center>
+            </BorderPane>
+            <GridPane prefHeight="637.0" prefWidth="116.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="183.3983917236328" minHeight="0.0" prefHeight="6.8071136474609375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="658.6903457641602" minHeight="10.0" prefHeight="652.1928863525391" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="132.32855224609375" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane StyleClass="background-color-3,border-color" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="8.89154052734375" prefHeight="8.89154052734375" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="71.10845947265625" minHeight="10.0" prefHeight="44.682342529296875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="39.0357666015625" minHeight="0.0" prefHeight="10.536941528320312" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="68.46305847167969" minHeight="0.0" prefHeight="43.82777404785156" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="49.272918701171875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.43505859375" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="167.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="202.5" minHeight="10.0" prefHeight="66.21929931640625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="203.70562744140625" minHeight="10.0" prefHeight="50.300933837890625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="198.2694091796875" minHeight="10.0" prefHeight="50.0548095703125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="197.2694091796875" minHeight="10.0" prefHeight="49.4451904296875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="180.1060791015625" minHeight="10.0" prefHeight="54.25506591796875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="181.17886352539062" minHeight="10.0" prefHeight="50.98211669921875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="166.16094970703125" minHeight="10.0" prefHeight="38.26397705078125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="156.57928466796875" minHeight="10.0" prefHeight="63.73602294921875" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <Label text="Filter" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                           <center>
+                              <Line endX="18.543380737304688" endY="0.2929084897041321" startX="-100.0" stroke="WHITE" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                           <center>
+                              <RadioButton fx:id="topViewToggle" mnemonicParsing="false" onAction="#toggleTopViewButton" prefHeight="18.0" prefWidth="115.0" text="Top View" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="toggleView" />
+                                 </toggleGroup>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </RadioButton>
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+                           <center>
+                              <RadioButton fx:id="sideViewToggle" mnemonicParsing="false" onAction="#toggleSideViewButton" prefHeight="18.0" prefWidth="115.0" text="Side View" StyleClass="text-fill-1" toggleGroup="$toggleView" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </RadioButton>
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+                           <center>
+                              <Line endX="20.616073608398438" endY="-0.49961650371551514" startX="-100.0" stroke="WHITE" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="114.0" text="TORA" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="114.0" text="TODA" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="10">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="116.0" text="ASDA" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="51.0" prefWidth="121.0" GridPane.rowIndex="11">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="113.0" text="LDA" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="12">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="112.0" text="Threshold" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="13">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="112.0" text="RESA" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="14">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="111.0" text="Stopway" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="15">
+                           <center>
+                              <CheckBox mnemonicParsing="false" opacity="0.0" prefHeight="18.0" prefWidth="111.0" text="TOCS / ALS" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <center>
+                              <Line endX="18.043380737304688" endY="4.661679267883301E-4" startX="-100.0" stroke="WHITE" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <GridPane GridPane.rowIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <CheckBox fx:id="rotationButton" mnemonicParsing="false" onAction="#toggleRotation" prefHeight="16.0" prefWidth="115.0" text="Match orientation" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <left>
+                                    <AnchorPane prefHeight="24.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <center>
+                                    <Label prefHeight="15.0" prefWidth="74.0" text="for Top View" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" StyleClass="background-color-3"  />
+      <BorderPane prefHeight="19.0" prefWidth="785.0" StyleClass="background-color-3" GridPane.columnIndex="1">
+         <center>
+            <Label prefHeight="23.0" prefWidth="118.0" text="Runway View" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>

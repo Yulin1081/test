@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<runway name="" icao="">
+    <mainDesignator></mainDesignator>
+    <side></side>
+    <takeOffLanding></takeOffLanding>
+    <TORA></TORA>
+    <TODA></TODA>
+    <ASDA></ASDA>
+    <threshold></threshold>
+    <LDA></LDA>
+    <RESA></RESA>
+    <blastAllowance></blastAllowance>
+</runway>

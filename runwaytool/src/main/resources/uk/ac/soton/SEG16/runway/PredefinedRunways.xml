@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<runways>
+    <!-- Birmingham International Airport -->
+    <runway name="Birmingham International Airport" icao="EGBB">
+        <mainDesignator>15</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>3003</TORA>
+        <TODA>3063</TODA>
+        <ASDA>3003</ASDA>
+        <threshold>0</threshold>
+        <LDA>3580</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Cardiff International Airport -->
+    <runway name="Cardiff International Airport" icao="EGFF">
+        <mainDesignator>12</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2318</TORA>
+        <TODA>2503</TODA>
+        <ASDA>2318</ASDA>
+        <threshold>0</threshold>
+        <LDA>2098</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Bournemouth Airport -->
+    <runway name="Bournemouth Airport" icao="EGHH">
+        <mainDesignator>08</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2271</TORA>
+        <TODA>2576</TODA>
+        <ASDA>2271</ASDA>
+        <threshold>0</threshold>
+        <LDA>1838</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Edinburgh Airport -->
+    <runway name="Edinburgh Airport" icao="EGPH">
+        <mainDesignator>06</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2556</TORA>
+        <TODA>2616</TODA>
+        <ASDA>2616</ASDA>
+        <threshold>0</threshold>
+        <LDA>2344</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Exeter International Airport -->
+    <runway name="Exeter International Airport" icao="EGTE">
+        <mainDesignator>08</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2036</TORA>
+        <TODA>2252</TODA>
+        <ASDA>2036</ASDA>
+        <threshold>0</threshold>
+        <LDA>2036</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Glasgow International Airport -->
+    <runway name="Glasgow International Airport" icao="EGPF">
+        <mainDesignator>05</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2658</TORA>
+        <TODA>2783</TODA>
+        <ASDA>2658</ASDA>
+        <threshold>0</threshold>
+        <LDA>2661</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Leeds Bradford Airport -->
+    <runway name="Leeds Bradford Airport" icao="EGNM">
+        <mainDesignator>14</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2113</TORA>
+        <TODA>3169</TODA>
+        <ASDA>2113</ASDA>
+        <threshold>0</threshold>
+        <LDA>1802</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- London City Airport -->
+    <runway name="London City Airport" icao="EGLC">
+        <mainDesignator>09</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>1199</TORA>
+        <TODA>1319</TODA>
+        <ASDA>1319</ASDA>
+        <threshold>0</threshold>
+        <LDA>1319</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- London Gatwick Airport -->
+    <runway name="London Gatwick Airport" icao="EGKK">
+        <mainDesignator>08</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>3159</TORA>
+        <TODA>3311</TODA>
+        <ASDA>3233</ASDA>
+        <threshold>0</threshold>
+        <LDA>2765</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- London Heathrow Airport -->
+    <runway name="London Heathrow Airport" icao="EGLL">
+        <mainDesignator>09</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>3901</TORA>
+        <TODA>3901</TODA>
+        <ASDA>3901</ASDA>
+        <threshold>0</threshold>
+        <LDA>3592</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- London Luton Airport -->
+    <runway name="London Luton Airport" icao="EGGW">
+        <mainDesignator>07</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2162</TORA>
+        <TODA>3243</TODA>
+        <ASDA>2162</ASDA>
+        <threshold>0</threshold>
+        <LDA>2162</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Manchester Airport -->
+    <runway name="Manchester Airport" icao="EGCC">
+        <mainDesignator>05</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>3047</TORA>
+        <TODA>3347</TODA>
+        <ASDA>3047</ASDA>
+        <threshold>0</threshold>
+        <LDA>2864</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Newcastle Airport -->
+    <runway name="Newcastle Airport" icao="EGNT">
+        <mainDesignator>07</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>2330</TORA>
+        <TODA>2405</TODA>
+        <ASDA>2344</ASDA>
+        <threshold>0</threshold>
+        <LDA>2209</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+    <!-- Southampton Airport -->
+    <runway name="Southampton Airport" icao="EGHI">
+        <mainDesignator>02</mainDesignator>
+        <side>R</side>
+        <takeOffLanding>TakeOff</takeOffLanding>
+        <TORA>1723</TORA>
+        <TODA>1831</TODA>
+        <ASDA>1723</ASDA>
+        <threshold>0</threshold>
+        <LDA>1650</LDA>
+        <RESA>0</RESA>
+        <blastAllowance>0</blastAllowance>
+    </runway>
+</runways>

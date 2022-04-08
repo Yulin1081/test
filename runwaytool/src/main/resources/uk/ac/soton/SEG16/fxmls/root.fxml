@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1280.0" style="-fx-background-color: DARKSLATEGREY;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.soton.SEG16.RootController">
+   <top>
+      <AnchorPane minHeight="-Infinity" prefHeight="28.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menubar" StyleClass="background-color-1,text-color-1" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="1670.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File" >
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#FileMenu_ImportRunway_XML" text="Import Runway" />
+                        <MenuItem mnemonicParsing="false" onAction="#FileMenu_ExportRunway_XML" text="Export Runway" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#ViewMenu_ExportAsPNG" text="Export as PNG" />
+                        <MenuItem mnemonicParsing="false" onAction="#ViewMenu_ExportAsJPG" text="Export as JPG" />
+                        <MenuItem mnemonicParsing="false" onAction="#ViewMenu_ExportAsGIF" text="Export as GIF" />
+                     </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Obstacle">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#ObstacleMenu_ImportXML" text="Import XML" />
+                        <MenuItem mnemonicParsing="false" onAction="#ObstacleMenu_ExportXML" text="Export XML" />
+                        <Menu fx:id="preDefObstacles" mnemonicParsing="false" text="Pre-Defined Obstacles" />
+                     </items>
+                </Menu>
+                  <Menu fx:id="preDefRunways" mnemonicParsing="false" text="Runways" />
+                  <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                      <MenuItem mnemonicParsing="false"  onAction="#OpenGitHubRepository" text="Open GitHub Repository" />
+                        <MenuItem mnemonicParsing="false" onAction="#OpenHelpWindow" text="Open Help Window" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="scheme">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#DarkTheme" text="Dark" />
+                        <MenuItem mnemonicParsing="false" onAction="#LightTheme" text="Light" />
+                        <MenuItem mnemonicParsing="false" onAction="#HighContrastTheme" text="HighContrast" />
+                        <MenuItem mnemonicParsing="false" onAction="#InitialTheme" text="Original" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+         </AnchorPane>
+   </top>
+</BorderPane>

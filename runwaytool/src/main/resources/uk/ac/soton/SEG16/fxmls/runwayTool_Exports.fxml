@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="Exportsgridpane" StyleClass="background-color-2" prefHeight="667.0" prefWidth="181.0" 
+xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="uk.ac.soton.SEG16.RunwayToolController_Exports">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="140.89208984375" minHeight="0.0" prefHeight="36.5" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="530.4819641113281" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="456.67266845703125" minHeight="10.0" prefHeight="93.58316040039062" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="402.20196533203125" minHeight="10.0" prefHeight="97.39398193359375" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.4807434082031" minHeight="10.0" prefHeight="105.8651123046875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.4807434082031" minHeight="10.0" prefHeight="100.96148681640625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.4807434082031" minHeight="10.0" prefHeight="223.53851318359375" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <BorderPane fx:id="OutputBorderPane" StyleClass="background-color-3" prefHeight="46.0" prefWidth="193.0" >
+         <center>
+            <Label text="Output" StyleClass="text-fill-1"  BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <top>
+            <AnchorPane prefHeight="12.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <AnchorPane prefHeight="70.0" prefWidth="7.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="70.0" prefWidth="9.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <GridPane StyleClass="background-color-1,border-color" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="68.1058349609375" minHeight="10.0" prefHeight="20.43169403076172" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="76.19717407226562" minHeight="10.0" prefHeight="49.56830596923828" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane  StyleClass="background-color-4" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.1058349609375" minWidth="10.0" prefWidth="76.29806518554688" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.90313720703125" minWidth="10.0" prefWidth="87.20193481445312" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.90313720703125" minWidth="10.0" prefWidth="19.882171630859375" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="58.5791015625" minHeight="10.0" prefHeight="54.36553955078125" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" StyleClass="background-color-4">
+                           <left>
+                              <AnchorPane prefHeight="60.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+                           </left>
+                           <center>
+                              <Label prefHeight="24.0" prefWidth="117.0" text="New TORA =" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label id="newTora" fx:id="newTORA" prefHeight="24.0" prefWidth="89.0" StyleClass="text-fill-1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <center>
+                              <Label prefHeight="23.0" prefWidth="25.0" text="m" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+                  <GridPane StyleClass="background-color-3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0625" minWidth="10.0" prefWidth="56.74371337890625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.319580078125" minWidth="10.0" prefWidth="131.75628662109375" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <Label prefHeight="11.0" prefWidth="54.0" text="Calculation :" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                        <Label id="newToraCalculation" fx:id="toraCalculation" prefHeight="17.0" prefWidth="153.0" StyleClass="text-fill-1" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <left>
+            <AnchorPane prefHeight="64.0" prefWidth="8.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="64.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <AnchorPane prefHeight="16.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <GridPane StyleClass="background-color-4 ,border-color" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="81.70944213867188" minHeight="10.0" prefHeight="19.272323608398438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="81.70944213867188" minHeight="10.0" prefHeight="44.72767639160156" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="57.0" prefWidth="213.0" StyleClass="background-color-4" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.3673095703125" minWidth="10.0" prefWidth="75.77511596679688" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.81976318359375" minWidth="10.0" prefWidth="86.72488403320312" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.81976318359375" minWidth="10.0" prefWidth="18.617828369140625" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="56.66328430175781" minHeight="10.0" prefHeight="55.320343017578125" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <Label prefHeight="19.0" prefWidth="107.0" text="New TODA =" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label id="newTODA" fx:id="newTODA" prefHeight="24.0" prefWidth="86.0" StyleClass="text-fill-1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <center>
+                              <Label prefHeight="23.0" prefWidth="19.0" text="m" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+                  <GridPane  StyleClass="background-color-3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.42706298828125" minWidth="10.0" prefWidth="50.52020263671875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.7633056640625" minWidth="10.0" prefWidth="123.47979736328125" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="35.0" prefWidth="65.0">
+                           <center>
+                              <Label prefHeight="11.0" prefWidth="49.0" text="Calculation :" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                        <Label id="newTodaCalculation" fx:id="todaCalculation" prefHeight="17.0" prefWidth="151.0" StyleClass="text-fill-1" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <top>
+            <AnchorPane prefHeight="18.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <AnchorPane prefHeight="66.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="66.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <GridPane StyleClass="background-color-4 ,border-color" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="79.00619506835938" minHeight="10.0" prefHeight="19.963409423828125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="79.00619506835938" minHeight="10.0" prefHeight="45.536590576171875" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane StyleClass="background-color-4" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.3009033203125" minWidth="10.0" prefWidth="74.32559204101562" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.137451171875" minWidth="10.0" prefWidth="84.67440795898438" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.48870849609375" minWidth="2.362548828125" prefWidth="16.845550537109375" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="62.5791015625" minHeight="10.0" prefHeight="50.35931396484375" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" StyleClass="background-color-4">
+                           <center>
+                              <Label prefHeight="27.0" prefWidth="130.0" text="New ASDA =" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <GridPane prefHeight="47.0" prefWidth="71.0" StyleClass="background-color-4" GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label id="newASDA" fx:id="newASDA" prefHeight="24.0" prefWidth="89.0" StyleClass="text-fill-1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <left>
+                              <Label prefHeight="23.0" prefWidth="17.0" text="m" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+                  <GridPane  StyleClass="background-color-3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.51690673828125" minWidth="10.0" prefWidth="58.552642822265625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.5" minWidth="10.0" prefWidth="125.44735717773438" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <Label prefHeight="11.0" prefWidth="55.0" text="Calculation :" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                        <Label id="newAsdaCalculation" fx:id="asdaCalculation" prefHeight="17.0" prefWidth="154.0" StyleClass="text-fill-1" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <top>
+            <BorderPane prefHeight="21.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <BorderPane prefHeight="72.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="72.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <GridPane StyleClass="background-color-4 ,border-color" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="39.381927490234375" minHeight="10.0" prefHeight="20.88214111328125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="77.303955078125" minHeight="10.0" prefHeight="51.61785888671875" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="206.0" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="96.90823364257812" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0225830078125" minWidth="10.0" prefWidth="60.091766357421875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0225830078125" minWidth="10.0" prefWidth="21.044647216796875" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" StyleClass="background-color-4">
+                           <center>
+                              <Label prefHeight="24.0" prefWidth="134.0" text="New Threshold =" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <GridPane StyleClass="background-color-4" GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="newThreshold" prefHeight="24.0" prefWidth="74.0" StyleClass="text-fill-1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <BorderPane prefHeight="54.0" prefWidth="18.0" StyleClass="background-color-4" GridPane.columnIndex="2">
+                           <center>
+                              <Label prefHeight="23.0" prefWidth="16.0" text="m" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="29.0" prefWidth="217.0"  StyleClass="background-color-3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.2135009765625" minWidth="10.0" prefWidth="52.6624755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="131.8375244140625" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <Label prefHeight="15.0" prefWidth="47.0" text="Calculation :" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                        <Label id="newThresholdCalculation" fx:id="thresholdCalculation" prefHeight="17.0" prefWidth="162.0" StyleClass="text-fill-1" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <GridPane GridPane.rowIndex="6">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="85.4642333984375" minHeight="0.0" prefHeight="26.90704345703125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="177.0" minHeight="10.0" prefHeight="39.09295654296875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="198.90704345703125" minHeight="10.0" prefHeight="198.90704345703125" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <BorderPane StyleClass="border-color" prefHeight="181.0" prefWidth="190.0" GridPane.rowIndex="2">
+               <left>
+                  <AnchorPane prefHeight="155.0" prefWidth="3.0" BorderPane.alignment="CENTER" />
+               </left>
+               <bottom>
+                  <AnchorPane prefHeight="6.0" prefWidth="223.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <Label id="calculationMessages" fx:id="calculationMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="139.0" prefWidth="174.0" style="-fx-background-color: DIMGREY;" StyleClass="text-fill-1,border-color" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <Label text="Calculation messages" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+         <left>
+            <AnchorPane prefHeight="72.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="72.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <AnchorPane prefHeight="16.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <GridPane StyleClass="background-color-4 ,border-color" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="36.679473876953125" minHeight="10.0" prefHeight="20.11785888671875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.95184326171875" minHeight="10.0" prefHeight="51.38214111328125" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <children>
+                        <GridPane prefHeight="24.0" prefWidth="216.0"  StyleClass="background-color-3">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.67950439453125" minWidth="10.0" prefWidth="48.816162109375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="123.183837890625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <Label prefHeight="11.0" prefWidth="52.0" text="Calculation :" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="9.0" />
+                                       </font>
+                                    </Label>
+                                 </center>
+                              </BorderPane>
+                              <Label fx:id="ldaCalculation" prefHeight="17.0" prefWidth="154.0" StyleClass="text-fill-1" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane  StyleClass="background-color-4" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.5" minWidth="10.0" prefWidth="92.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.5" minWidth="10.0" prefWidth="83.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.67950439453125" minWidth="10.0" prefWidth="32.8048095703125" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" StyleClass="background-color-4">
+                           <center>
+                              <Label prefHeight="27.0" prefWidth="140.0" text="New LDA =" StyleClass="text-fill-1" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0"  StyleClass="background-color-4" GridPane.columnIndex="2">
+                           <center>
+                              <Label text="m" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0"  StyleClass="background-color-4" GridPane.columnIndex="1">
+                           <center>
+                              <Label fx:id="newLDA" prefHeight="23.0" prefWidth="95.0" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>

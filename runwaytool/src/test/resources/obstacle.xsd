@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="obstacle">
+  <xsd:complexType>
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="distanceX" type="xsd:float"/>
+      <xsd:element name="distanceY" type="xsd:float"/>
+      <xsd:element name="length" type="xsd:float"/>
+      <xsd:element name="width" type="xsd:float"/>
+      <xsd:element name="frontHeight" type="xsd:float"/>
+      <xsd:element name="backHeight" type="xsd:float"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>

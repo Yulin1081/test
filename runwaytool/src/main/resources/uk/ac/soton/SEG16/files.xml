@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<obstacles>
+    <obstacle>
+        <name>Plane 20m from Threshold</name>
+        <distanceX>20.0</distanceX>
+        <distanceY>0.0</distanceY>
+        <length>495.0</length>
+        <width>100.0</width>
+        <frontHeight>25.0</frontHeight>
+        <backHeight>124.0</backHeight>
+    </obstacle>
+    <obstacle>
+        <name>Plane 500m from Threshold</name>
+        <distanceX>500.0</distanceX>
+        <distanceY>0.0</distanceY>
+        <length>495.0</length>
+        <width>100.0</width>
+        <frontHeight>25.0</frontHeight>
+        <backHeight>124.0</backHeight>
+    </obstacle>
+    <obstacle>
+        <name>Vehicle 1000m from Threshold</name>
+        <distanceX>1000.0</distanceX>
+        <distanceY>0.0</distanceY>
+        <length>20.0</length>
+        <width>5.0</width>
+        <frontHeight>10.0</frontHeight>
+        <backHeight>10.0</backHeight>
+    </obstacle>
+</obstacles>

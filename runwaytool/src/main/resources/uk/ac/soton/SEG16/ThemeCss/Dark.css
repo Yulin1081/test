@@ -1,0 +1,27 @@
+.background-color-1{
+    -fx-background-color: #000000;
+}
+.background-color-2{
+    -fx-background-color: #1f1f1f;
+}
+.background-color-3{
+    -fx-background-color: rgb(78,99,120);
+}
+.background-color-4{
+    -fx-background-color: #2a334d;
+}
+.background-color-5{
+    -fx-background-color: #1f1f1f;
+}
+.background-color-6{
+    -fx-background-color: #2f2f2f;
+}
+
+.text-color-1{
+    -fx-color:#000;
+    -fx-border-color: #000;
+}
+
+.text-fill-1{
+    -fx-text-fill: WHITE; 
+}

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="Importsgridpane" StyleClass="background-color-2" prefHeight="667.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.soton.SEG16.RunwayToolController_Imports">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="57.93158721923828" minHeight="10.0" prefHeight="28.912002563476562" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="65.848876953125" minHeight="10.0" prefHeight="28.343772888183594" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="43.69776153564453" minHeight="0.0" prefHeight="2.6562271118164062" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="81.5" minHeight="10.0" prefHeight="28.5" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="91.2669677734375" minHeight="10.0" prefHeight="29.442001342773438" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="123.10040283203125" minHeight="0.0" prefHeight="31.557998657226562" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="148.12933349609375" minHeight="10.0" prefHeight="30.294662475585938" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="188.51431274414062" minHeight="6.3758544921875" prefHeight="32.70533752441406" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="175.11846923828125" minHeight="10.0" prefHeight="29.1473388671875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="175.11846923828125" minHeight="10.0" prefHeight="33.8526611328125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="175.11846923828125" minHeight="10.0" prefHeight="29.5" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="175.11846923828125" minHeight="10.0" prefHeight="34.901763916015625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="306.3849182128906" minHeight="10.0" prefHeight="215.2421875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="274.31085205078125" minHeight="10.0" prefHeight="123.2578125" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <BorderPane fx:id="inputborderpane" StyleClass="background-color-3" prefHeight="28.0" prefWidth="203.0" style="">
+         <center>
+            <Label text="Input" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <GridPane prefHeight="48.0" prefWidth="340.0" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.89210510253906" minWidth="0.0" prefWidth="43.35890197753906" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="128.64109802246094" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.02145385742188" minWidth="10.0" prefWidth="129.24325561523438" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <center>
+                  <RadioButton fx:id="takeOffButton" mnemonicParsing="false" onAction="#Toggle_TOL_TakeOff" 
+                  prefHeight="24.0" prefWidth="130.0" text="Take off" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tg1" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </RadioButton>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <center>
+                  <RadioButton fx:id="landingButton" mnemonicParsing="false" onAction="#Toggle_TOL_Landing" prefHeight="24.0" prefWidth="124.0" text="Landing" StyleClass="text-fill-1" toggleGroup="$tg1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </RadioButton>
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.9744873046875" minWidth="3.6848745346069336" prefWidth="4.211134910583496" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.4582328796387" minWidth="10.0" prefWidth="277.2888650894165" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.97445678710938" minWidth="10.0" prefWidth="42.12158203125" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Line endX="230.36061096191406" endY="1.171595811843872" startX="478.2894287109375" startY="0.6716074347496033" stroke="WHITE" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane prefHeight="33.0" prefWidth="333.0" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.11907958984375" minWidth="0.16263675689697266" prefWidth="3.795196533203125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.11907958984375" minWidth="0.6644086837768555" prefWidth="0.6644086837768555" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.03048133850098" minWidth="10.0" prefWidth="95.33985137939453" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.76008605957031" minWidth="10.0" prefWidth="44.2203369140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.24055480957031" minWidth="10.0" prefWidth="44.2796630859375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.45346069335938" minWidth="10.0" prefWidth="48.25508117675781" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0711669921875" minWidth="10.0" prefWidth="57.704803466796875" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="107.0" text="Runway side" StyleClass="text-fill-1" GridPane.columnIndex="2">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="leftSideButton" mnemonicParsing="false" onAction="#Toggle_RS_L" text="L" StyleClass="text-fill-1" GridPane.columnIndex="3">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tg2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rightSideButton" mnemonicParsing="false" onAction="#Toggle_RS_R" prefHeight="24.0" prefWidth="47.0" text="R" StyleClass="text-fill-1" toggleGroup="$tg2" GridPane.columnIndex="4">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="centreButton" mnemonicParsing="false" onAction="#Toggle_RS_C" prefHeight="24.0" prefWidth="40.0" text="C" StyleClass="text-fill-1" toggleGroup="$tg2" GridPane.columnIndex="5">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="noSideButton" mnemonicParsing="false" onAction="#Toggle_RS_NA" prefHeight="16.0" prefWidth="51.0" text="(NA)" StyleClass="text-fill-1" toggleGroup="$tg2" GridPane.columnIndex="6">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </GridPane>
+      <GridPane prefHeight="22.0" prefWidth="197.0" GridPane.rowIndex="4">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.4239807128906" minWidth="10.0" prefWidth="208.7568817138672" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.03233337402344" minWidth="0.0" prefWidth="43.24311828613281" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.03233337402344" minWidth="0.693328857421875" prefWidth="5.860260009765625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="56.0" prefWidth="229.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="196.0" text="Runway name" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <GridPane GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="runwayName" prefHeight="26.0" prefWidth="31.0" style="-fx-background-color: GAINSBORO;" text="00" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="5">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.02145385742188" minWidth="10.0" prefWidth="177.86317443847656" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.6868896484375" minWidth="0.0" prefWidth="37.05683898925781" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.21206665039062" minWidth="10.0" prefWidth="72.44316101074219" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="166.0" text="Original TORA (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <right>
+                  <AnchorPane prefHeight="28.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField fx:id="toraInput" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="6">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0718231201172" minWidth="10.0" prefWidth="188.2804718017578" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.56389617919922" minWidth="0.0" prefWidth="28.54547119140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.2913818359375" minWidth="10.0" prefWidth="72.45452880859375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="35.0" prefWidth="83.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="178.0" text="Original TODA (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <right>
+                  <AnchorPane prefHeight="30.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField fx:id="todaInput" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="7">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.02859497070312" minWidth="10.0" prefWidth="193.87033081054688" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.84512329101562" minWidth="3.0" prefWidth="22.545455932617188" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.79135131835938" minWidth="10.0" prefWidth="72.95454406738281" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="183.0" text="Original ASDA (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <right>
+                  <AnchorPane prefHeight="26.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+               </right>
+               <top>
+                  <AnchorPane prefHeight="5.0" prefWidth="89.0" BorderPane.alignment="CENTER" />
+               </top>
+               <bottom>
+                  <AnchorPane prefHeight="5.0" prefWidth="89.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <TextField fx:id="asdaInput" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="8">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.8955078125" minWidth="10.0" prefWidth="200.8955078125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.5214385986328" minWidth="0.0" prefWidth="11.9886474609375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.86318969726562" minWidth="10.0" prefWidth="71.0113525390625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="189.0" text="Original LDA (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="148.0" prefWidth="108.0" GridPane.columnIndex="2">
+               <right>
+                  <AnchorPane prefHeight="30.0" prefWidth="4.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField fx:id="ldaInput" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="9">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.48680114746094" minWidth="10.0" prefWidth="188.51927185058594" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.34939575195312" minWidth="10.0" prefWidth="23.465896606445312" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.59280395507812" minWidth="10.0" prefWidth="71.53410339355469" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="183.0" text="Threshold displacement (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <right>
+                  <AnchorPane prefHeight="30.0" prefWidth="4.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField fx:id="thresholdInput" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="10">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.75381469726562" minWidth="10.0" prefWidth="185.75381469726562" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.78012084960938" minWidth="10.0" prefWidth="34.069244384765625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0994110107422" minWidth="10.0" prefWidth="75.93075561523438" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Label prefHeight="23.0" prefWidth="175.0" text="Original RESA (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <right>
+                  <AnchorPane prefHeight="30.0" prefWidth="4.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField fx:id="resaInput" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="11">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.208251953125" minWidth="10.0" prefWidth="195.40481567382812" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.7643280029297" minWidth="10.0" prefWidth="63.095184326171875" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Label prefHeight="20.0" prefWidth="204.0" text="Blast protection/allowance (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="48.0" prefWidth="133.0" GridPane.columnIndex="1">
+               <right>
+                  <AnchorPane prefHeight="35.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField fx:id="blastInput" prefHeight="26.0" prefWidth="123.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane fx:id="toolgridpane" prefHeight="171.0" prefWidth="293.0" GridPane.rowIndex="12">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.1472625732422" minWidth="0.0" prefWidth="3.292595863342285" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.52328491210938" minWidth="10.0" prefWidth="201.9254913330078" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.4507598876953" minWidth="10.0" prefWidth="51.07450866699219" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.4507598876953" minWidth="4.3679962158203125" prefWidth="4.3679962158203125" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="30.445404052734375" minHeight="0.0" prefHeight="1.264434814453125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.56134033203125" minHeight="10.0" prefHeight="28.235565185546875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.754669189453125" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.13079833984375" minHeight="10.0" prefHeight="27.90179443359375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.070068359375" minHeight="10.0" prefHeight="29.8526611328125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.83407592773438" minHeight="10.0" prefHeight="28.3035888671875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="78.99761962890625" minHeight="10.0" prefHeight="30.25445556640625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="78.99761962890625" minHeight="0.0" prefHeight="7.24554443359375" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <left>
+                  <Label prefHeight="23.0" prefWidth="235.0" text="Obstacle distance from threshold (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="66.0" prefWidth="25.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <center>
+                  <TextField fx:id="obstacleX" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <left>
+                  <Label prefHeight="15.0" prefWidth="218.0" text="Obstacle distance from centre line (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <center>
+                  <TextField fx:id="obstacleY" prefHeight="26.0" prefWidth="49.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="76.0" prefWidth="153.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <left>
+                  <Label prefHeight="20.0" prefWidth="219.0" text="Obstacle length (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <center>
+                  <TextField fx:id="obstacleLengthInput" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <left>
+                  <Label prefHeight="14.0" prefWidth="166.0" text="Obstacle width (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <center>
+                  <TextField fx:id="obstacleWidthInput" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <left>
+                  <Label prefHeight="14.0" prefWidth="216.0" text="Obstacle front height (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <center>
+                  <TextField fx:id="obstacleFrontHeightinput" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <left>
+                  <Label prefHeight="14.0" prefWidth="181.0" text="Obsacle back height (m)" StyleClass="text-fill-1" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <center>
+                  <TextField fx:id="obstacleBackHeightInput" style="-fx-background-color: GAINSBORO;" text="0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <GridPane prefHeight="161.0" prefWidth="293.0" GridPane.rowIndex="13">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="137.07830810546875" minHeight="10.0" prefHeight="61.94915771484375" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane prefHeight="114.0" prefWidth="364.0">
+               <center>
+                  <Button fx:id="calculateButton" StyleClass="background-color-4,text-fill-1,border-color" mnemonicParsing="false" onAction="#calculateAction" prefHeight="60.0" prefWidth="245.0" text="Calculate"  BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

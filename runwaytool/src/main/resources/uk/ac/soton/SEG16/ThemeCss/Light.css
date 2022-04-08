@@ -1,0 +1,31 @@
+.background-color-1{
+    -fx-background-color: rgb(232,231,238);
+}
+.background-color-2{
+    -fx-background-color: #fff;
+}
+.background-color-3{
+    -fx-background-color: rgb(234,240,245);
+}
+.background-color-4{
+    -fx-background-color: rgb(241,240,245);
+}
+.background-color-5{
+    -fx-background-color: rgb(247,241,235);
+}
+.background-color-6{
+    -fx-background-color: rgb(242,236,220);
+}
+
+.text-color-1{
+    -fx-color:#fff;
+    -fx-border-color: #fff;
+}
+
+.text-fill-1{
+    -fx-text-fill: #000; 
+}
+
+.text-fill-2{
+    -fx-text-fill: #000000;
+}
