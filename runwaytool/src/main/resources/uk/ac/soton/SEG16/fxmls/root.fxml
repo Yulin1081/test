@@ -38,7 +38,7 @@
                         <MenuItem mnemonicParsing="false" onAction="#OpenHelpWindow" text="Open Help Window" />
                     </items>
                   </Menu>
-                  <Menu mnemonicParsing="false" text="scheme">
+                  <Menu mnemonicParsing="false" text="Scheme">
                     <items>
                       <MenuItem mnemonicParsing="false" onAction="#DarkTheme" text="Dark" />
                         <MenuItem mnemonicParsing="false" onAction="#LightTheme" text="Light" />
